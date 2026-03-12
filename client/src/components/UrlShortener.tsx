@@ -7,7 +7,7 @@ interface UrlShortenerProps {
   customDomain: string;
 }
 
-export function UrlShortener({ onUrlShortened, customDomain }: UrlShortenerProps) {
+export function UrlShortener({ onUrlShortened, customDomain: _customDomain }: UrlShortenerProps) {
   const [longUrl, setLongUrl] = useState('');
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
